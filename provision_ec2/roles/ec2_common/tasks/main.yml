@@ -1,7 +1,7 @@
 ---
 - name: create ec2 instance
   ec2:
-    keypair: tower-user
+    keypair: tower
     type: t2.small
     image: ami-a86614bf
     region: us-east-1
