@@ -13,13 +13,13 @@
   tags:
     - users
 
-- name: Force user with default password to change password at next login
-  command: chage -d 0 {{ item.name }}
-  when: result.changed
-  with_items:
-    - "{{ users }}"
-  tags:
-    - users
+#- name: Force user with default password to change password at next login
+#  command: chage -d 0 {{ item.name }}
+#  when: result.changed
+#  with_items:
+#    - "{{ users }}"
+#  tags:
+#    - users
 
 - name: Add or remove yum packages
   package:
