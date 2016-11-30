@@ -6,8 +6,8 @@
     image: ami-a86614bf
     region: us-east-1
     count: "{{ ec2_instance_count | int }}"
-    group_id: sg-ed167d90
-    vpc_subnet_id: subnet-9b9e1fb6
+    group_id: sg-16f2826b
+    vpc_subnet_id: subnet-f7e266ac
     assign_public_ip: yes
     instance_tags:
       Name: "{{ tower_user_name }}-lab"
